@@ -1,0 +1,80 @@
+<html>
+
+<head>
+
+<style>
+p{
+	font-family: "Courier New", Courier, Monaco;
+	margin: 0px;
+	padding: 0px;
+	cursor: default;
+}
+a{
+	font-family: "Courier New", Courier, Monaco;
+	margin: 0px;
+	padding: 0px;
+}
+.header{
+	font-size: 20px;
+	font-weight: bold;
+}
+.app{
+	margin-left: 50px;
+}
+.info{
+	margin-left: 100px;
+	width: 50%;
+}
+.link{
+	margin-left: 100px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#typetester").toggle();
+	$("#typetester-info").toggle();
+	$("#typetester-link").toggle();
+	$("#threegame").toggle();
+	$("#threegame-info").toggle();
+	$("#threegame-link").toggle();
+	
+	$("#jsapps").click(function(){
+		$("#typetester").toggle();
+		$("#typetester-info").hide();
+		$("#typetester-link").hide();
+	
+		$("#threegame").toggle();
+		$("#threegame-info").hide();
+		$("#threegame-link").hide();
+	
+	});
+	
+	$("#typetester").click(function(){
+		$("#typetester-info").toggle();
+		$("#typetester-link").toggle();
+	});
+	
+	$("#threegame").click(function(){
+		$("#threegame-info").toggle();
+		$("#threegame-link").toggle();
+	});
+});
+</script>
+
+</head>
+
+<body>
+<p class="header">A personal portfolio of Caleb Wait.</p>
+<a id="Invasion" href="./invade/index.html">Go to the invasion game</a>
+<p id="jsapps" class="folder">JS Apps</p>
+	<p id="typetester" class="app">typetester</p>
+		<p id="typetester-info" class="info">A more accurate way of measuring your typing speed. It does this by eliminating the need to copy something, therefore you typing from your head like you normally do.</p>
+		<a id="typetester-link" class="link" href="./jsapps/typetester/typetester.html">link.</a>
+	<p id="threegame" class="app">threegame</p>
+		<p id="threegame-info" class="info">A game.</p>
+		<a id="threegame-link" class="link" href="./jsapps/threegame/index.html">link.</a>
+<p id="jsapps" class="folder">Java Apps</p>
+</body>
+
+</html>
