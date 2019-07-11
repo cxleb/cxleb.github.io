@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="res/common.css">
+    <link rel="stylesheet" href="res/projects.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="res/projects.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        for(var key in projects){
+          $("#container").html($("#container").html() + generateProject(key));
+        }
+      });
+      function generateProject(key) {
+        var str = "<h2>"+projects[key]["title"]+"</h2>";
+        str += "<p>"+projects[key]["desc"]+"</p>";
+        str += "<a href='"+projects[key]["link"]+"'>View Project</a>";
+        return str;
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="nav-title" href="index.html">Caleb Wait</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+    </nav>
+    <div style="height: 100px;"></div>
+    <div class="content-wrapper">
+      <div class="content" id="container">
+      </div>
+    </div>
+  </body>
+</html>

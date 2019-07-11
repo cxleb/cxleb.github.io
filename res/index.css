@@ -1,0 +1,52 @@
+.top-wrapper{
+  height: 100%;
+  background-image: url("background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.title-wrapper{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 720px;
+}
+
+.title{
+  font-size: 48px;
+  color: white;
+  display: block;
+  font-family: "Galyon";
+}
+
+.fsd{
+  border-radius: 20px;
+  padding: 4px;
+  border: 2px white solid;
+}
+
+.content-wrapper{
+  background-color: darkgrey;
+  padding: 0 6% 0 6%;
+}
+
+.content{
+  background-color: black;
+  padding: 20px;
+}
+
+.content-header{
+  font-family: "Galyon";
+  color: white;
+}
+
+.content-text{
+  font-family: "Galyon";
+  color: white;
+}
+
+.content-list{
+  padding-left: 20px;
+}
