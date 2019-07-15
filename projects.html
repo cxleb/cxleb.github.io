@@ -11,9 +11,11 @@
         }
       });
       function generateProject(key) {
-        var str = "<h2>"+projects[key]["title"]+"</h2>";
-        str += "<p>"+projects[key]["desc"]+"</p>";
-        str += "<a href='"+projects[key]["link"]+"'>View Project</a>";
+        var str = "<div class='project-wrapper'>";
+        str += "<h2 class='project-header'>"+projects[key]["title"]+"</h2>";
+        str += "<p  class='project-content'>"+projects[key]["desc"]+"</p>";
+        str += "<a href='"+projects[key]["link"]+"' class='project-link'>View Project</a>";
+        str += "</div>";
         return str;
       }
     </script>
@@ -23,8 +25,9 @@
       <a class="nav-title" href="index.html">Caleb Wait</a>
       <a class="nav-link" href="projects.html">Projects</a>
     </nav>
-    <div style="height: 100px;"></div>
+    <div style="height:75px;"></div>
     <div class="content-wrapper">
+      <h1 class="content-header">Projects</h1>
       <div class="content" id="container">
       </div>
     </div>

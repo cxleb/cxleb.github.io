@@ -3,6 +3,35 @@
 }
 
 .content{
-  padding: 20px;
+  padding: 5px;
   font-family: "Galyon";
+}
+
+.project-wrapper{
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.project-link{
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 3px;
+}
+
+.project-content{
+  padding: 5px;
+}
+
+.project-header{
+  text-decoration: underline;
+}
+
+.content-header{
+  font-family: "Galyon";
+  text-decoration: underline;
 }
