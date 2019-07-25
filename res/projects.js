@@ -2,7 +2,7 @@ var projects = {
   "avsketch" : {
     "title" : "AVSketch",
     "desc" : "A vector drawing application with an infinite canvas used to sketch up an idea as if you would in a notebook, made for my HSC SDD 'Major' project. you can view it on github",
-    "link" : "https://github.com/cxleb/AVSketch"
+    "link" : "AVSketch/index.html"
   },
   "to10" : {
     "title" : "CityRail to 10 Cheat",
