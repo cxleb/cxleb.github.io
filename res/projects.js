@@ -1,4 +1,9 @@
 var projects = {
+  "healm" : {
+    "title" : "Healm: Game",
+    "desc" : "My long term game development project built from scratch, my \"Magna Opus\" of sorts. I have had to learn alot and the game engine is in its 3rd interation, the game engine currently is made in C# targeting OpenGL using the OpenTK wrapper library",
+    "link" : "Healm/index.html"
+  },
   "avsketch" : {
     "title" : "AVSketch",
     "desc" : "A vector drawing application with an infinite canvas used to sketch up an idea as if you would in a notebook, made for my HSC SDD 'Major' project. you can view it on github",
