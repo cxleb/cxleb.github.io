@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Where will Latifi finish?</title>
+        <script>
+            // -1 is dnf
+            const drivers = 20;
+            // no point field cause latifi :)
+            const latifi = [
+                {year: 2022, race: "bahrain", finish: 16},
+                {year: 2022, race: "saudiarabia", finish: -1},
+                {year: 2022, race: "australia", finish: 16},
+                {year: 2022, race: "emiliaromagna", finish: 16},
+                {year: 2022, race: "miami", finish: 14},
+                {year: 2022, race: "spanish", finish: 16},
+                {year: 2022, race: "monaco", finish: 15},
+                {year: 2022, race: "baku", finish: 15},
+                {year: 2022, race: "canda", finish: 16},
+                {year: 2022, race: "austria", finish: -1},
+                {year: 2022, race: "france", finish: -1},
+                {year: 2022, race: "hungary", finish: 18},
+                {year: 2022, race: "spa", finish: 18},
+                {year: 2022, race: "netherlands", finish: 18},
+                {year: 2022, race: "monza", finish: 15},
+                {year: 2022, race: "singapore", finish: -1},
+            ];
+            var seed = 1;
+            function seededRandom() {
+                const m = 8239852;
+                const a = seed * 3496705;
+                const b = a * a * a * 52945825;
+                const c = b % m;
+                seed = c;
+                return c / m;
+            }
+
+            window.addEventListener('load', function() {
+                const hefinishes = document.getElementById("hefinishes");
+                
+                seed = Math.floor(Date.now() / (24 * 60 * 60 * 1000));
+                
+                let places = [];
+                places.push(-1);
+                for(let i = 0; i < drivers; i++) places.push(i + 1);
+                latifi.forEach(gp => {
+                    places.push(gp.finish);
+                })
+                places.sort(() => seededRandom() > 0.5);
+
+                const i = Math.floor(seededRandom() * places.length);
+                
+                const place = places[i];
+                if(place == -1)
+                    hefinishes.innerText = "DNF";
+                else
+                    hefinishes.innerText = "P" + place;
+            }, false);
+        </script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1, h2{
+                text-align: center;
+            }
+            .box {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1>Where will Latifi finish?</h1><br/>
+            <h2 id="hefinishes">P20</h2>
+        </div>
+    </body>
+</html>
