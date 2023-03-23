@@ -23,5 +23,15 @@ var projects = {
     "title" : "Random Map Generation Graphical Demo",
     "desc" : "Originally meant to be a game, instead it is a graphical demo showing a perlin-noise-like map generation, graphics done in a custom WebGL graphics engine using glmatrix and as math supporter. all models designed by me",
     "link" : "jsapps/invade/index.html"
+  },
+  "colorspace" : {
+    "title" : "Color Space explorer",
+    "desc" : "Color Space explorer for learning",
+    "link" : "jsapps/colorspace.html"
+  },
+  "fitpolynomial" : {
+    "title" : "Fit Polynomial",
+    "desc" : "Fits a polynomial curve pased on points on a plane",
+    "link" : "jsapps/fitpolynomial.html"
   }
 }
