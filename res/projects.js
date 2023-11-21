@@ -34,7 +34,7 @@ var projects = {
     "desc" : "Fits a polynomial curve pased on points on a plane",
     "link" : "jsapps/fitpolynomial.html"
   },
-  "fitpolynomial" : {
+  "jkit" : {
     "title" : "jkit test",
     "desc" : "demo of cross platform application framework I'm developing for compute-oriented applications like raster image editors",
     "link" : "jsapps/jkit/index.html"
